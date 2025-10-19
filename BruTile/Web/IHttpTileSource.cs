@@ -11,5 +11,5 @@ namespace BruTile;
 /// </summary>
 public interface IHttpTileSource : ITileSource
 {
-    Task<byte[]?> GetTileAsync(HttpClient httpClient, TileInfo tileInfo, CancellationToken? cancellation = null);
+    Task<byte[]?> GetTileAsync(TileInfo tileInfo, CancellationToken? cancellation = null);
 }
